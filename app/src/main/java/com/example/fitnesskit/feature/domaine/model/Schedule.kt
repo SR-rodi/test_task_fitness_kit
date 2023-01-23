@@ -1,9 +1,11 @@
 package com.example.fitnesskit.feature.domaine.model
 
+import com.example.fitnesskit.feature.domaine.model.childe.Lesson
+import com.example.fitnesskit.feature.domaine.model.childe.Option
+import com.example.fitnesskit.feature.domaine.model.childe.Trainer
+
 class Schedule(
-    val clubName: String,
-    val linkAndroid: String,
-    val linkIos: String,
-    val primaryColor: String,
-    val secondaryColor: String
+    val option: Option,
+    val lessons: List<Lesson>,
+    val trainers: Map<String,Trainer>,
 )

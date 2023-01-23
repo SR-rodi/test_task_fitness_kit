@@ -3,11 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".feature.presentation.ScheduleFragment">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/schedule_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello" />
-
+        android:orientation="vertical"
+        tools:listitem="@layout/item_schedule"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 </FrameLayout>
