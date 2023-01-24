@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/grey"
         android:layout_marginStart="6dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="28dp"
         tools:text="Понедельник, 09 января"/>
 
     <include android:id="@+id/card"

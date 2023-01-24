@@ -22,7 +22,10 @@ fun List<TrainerDto>.toMapTrainer(): MutableMap<String, Trainer> {
 
 @Suppress("UNUSED_EXPRESSION")
 fun Schedule.toListScheduleUi(): List<ScheduleUi> {
-    this.lessons = this.lessons.sortedBy { lesson -> lesson.date }
+
+    this.lessons = this.lessons.sortedWith(compareBy({ lessons -> lessons.date },
+        { lessons -> lessons.startTime }))
+
     var currentDate = this.lessons.first().date
 
     return this.lessons.mapIndexed { index, lesson ->

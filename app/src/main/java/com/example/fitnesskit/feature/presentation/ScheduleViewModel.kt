@@ -5,9 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.fitnesskit.core.toListScheduleUi
 import com.example.fitnesskit.feature.domaine.usecase.ScheduleUseCase
 import com.example.fitnesskit.feature.presentation.model.ScheduleUi
-import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
