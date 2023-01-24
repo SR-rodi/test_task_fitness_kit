@@ -6,6 +6,6 @@ import com.example.fitnesskit.feature.domaine.model.childe.Trainer
 
 class Schedule(
     val option: Option,
-    val lessons: List<Lesson>,
+    var lessons: List<Lesson>,
     val trainers: Map<String,Trainer>,
 )

@@ -14,6 +14,8 @@ class ScheduleFragment : BaseFragment<FragmentScheduleBinding>() {
 
     private val viewModel by viewModel<ScheduleViewModel>()
 
+    private val adapter by lazy { ScheduleAdapter() }
+
     override fun initBinding(inflater: LayoutInflater) = FragmentScheduleBinding.inflate(inflater)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -25,7 +27,8 @@ class ScheduleFragment : BaseFragment<FragmentScheduleBinding>() {
     private fun scheduleObserve() {
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.schedule.collect { schedule ->
-                binding.scheduleRecycler.adapter = ScheduleAdapter(schedule)
+                adapter.items = schedule
+                binding.scheduleRecycler.adapter = adapter
             }
         }
     }
