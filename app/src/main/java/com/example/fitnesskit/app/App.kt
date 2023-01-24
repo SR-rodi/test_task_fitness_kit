@@ -14,6 +14,5 @@ class App : Application() {
                 listOf(apiModule, networkRepositoryModule, networkUseCaseModule, viewModelModel)
             )
         }
-
     }
 }

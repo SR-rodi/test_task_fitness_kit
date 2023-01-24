@@ -9,6 +9,5 @@ class ScheduleAdapter : ListDelegationAdapter<List<ScheduleUi>>() {
     init {
         delegatesManager.addDelegate(delegateScheduleCard())
             .addDelegate(delegateScheduleCardDate())
-
     }
 }

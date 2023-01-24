@@ -1,6 +1,6 @@
 package com.example.fitnesskit.feature.domaine.model.childe
 
-class Option (
+class Option(
     val clubName: String,
     val linkAndroid: String,
     val linkIos: String,

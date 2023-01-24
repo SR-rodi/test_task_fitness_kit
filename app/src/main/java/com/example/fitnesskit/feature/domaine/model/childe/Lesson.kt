@@ -1,7 +1,5 @@
 package com.example.fitnesskit.feature.domaine.model.childe
 
-import com.google.gson.annotations.SerializedName
-
 class Lesson(
     val color: String,
     val commercial: Boolean,

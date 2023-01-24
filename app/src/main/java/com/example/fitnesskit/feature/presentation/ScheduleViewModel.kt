@@ -26,7 +26,6 @@ class ScheduleViewModel(
             _schedule.emit(scheduleRepository.getScheduleByClubId(CLUB_ID).toListScheduleUi())
         }
 
-
     companion object {
         private const val CLUB_ID = 2
     }

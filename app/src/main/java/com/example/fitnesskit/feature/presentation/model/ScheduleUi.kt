@@ -6,5 +6,5 @@ interface ScheduleUi {
     val startTime: String
     val endTime: String
     val studio: String
-    val color:String
+    val color: String
 }

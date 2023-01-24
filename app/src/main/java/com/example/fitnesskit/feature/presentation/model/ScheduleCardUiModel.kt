@@ -7,4 +7,4 @@ class ScheduleCardUiModel(
     override val endTime: String,
     override val studio: String,
     override val color: String,
-):ScheduleUi
+) : ScheduleUi

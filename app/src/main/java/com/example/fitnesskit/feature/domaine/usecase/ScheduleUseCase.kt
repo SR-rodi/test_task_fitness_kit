@@ -4,5 +4,5 @@ import com.example.fitnesskit.feature.domaine.model.Schedule
 
 interface ScheduleUseCase {
 
-    suspend fun getScheduleByClubId(clubID:Int): Schedule
+    suspend fun getScheduleByClubId(clubID: Int): Schedule
 }
